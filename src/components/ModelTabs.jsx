@@ -20,7 +20,7 @@ export default function ModelTabs() {
         allowScrollButtonsMobile
       >
         <Tab label={t("asr")} />
-        <Tab label={t("correct")} />
+        {/*<Tab label={t("correct")} />*/}
         <Tab label={t("wo_fr")} />
         <Tab label={t("fr_wo")} />
         <Tab label={t("rag")} />
@@ -38,15 +38,15 @@ export default function ModelTabs() {
             <ASRPanel />
           </>
         )}
-        {tab === 1 && (
+        {/*tab === 1 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("correct_desc")}
             </Typography>
             <TextPanel endpoint="/model/correct" />
           </>
-        )}
-        {tab === 2 && (
+        )*/}
+        {tab === 1 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("wo_fr")}
@@ -54,7 +54,7 @@ export default function ModelTabs() {
             <TextPanel endpoint="/model/wo-fr" />
           </>
         )}
-        {tab === 3 && (
+        {tab === 2 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("fr_wo")}
@@ -62,7 +62,7 @@ export default function ModelTabs() {
             <TextPanel endpoint="/model/fr-wo" />
           </>
         )}
-        {tab === 4 && (
+        {tab === 3 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("rag_desc")}
@@ -70,7 +70,7 @@ export default function ModelTabs() {
             <TextPanel endpoint="/model/rag" />
           </>
         )}
-        {tab === 5 && (
+        {tab === 4 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("tts")}
