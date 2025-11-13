@@ -2,9 +2,9 @@ import React, { createContext, useContext, useState } from "react";
 
 const translations = {
   fr: {
-    appTitle: "Testeur de modèles IA",
+    appTitle: "Testeur de modèles IA de Jokalante",
     description:
-      "Transcription, traduction, et génération audio et de réponse pour Wolof ↔ Français",
+      "Transcription, traduction, et génération audio Wolof ↔ Français",
     asr: "Transcription (Audio → Wolof)",
     asr_desc:
       "Téléverse un fichier audio en wolof et obtiens le texte transcrit en wolof.",
@@ -32,9 +32,9 @@ const translations = {
     no_result: "Aucun résultat",
   },
   en: {
-    appTitle: "AI Model Tester",
+    appTitle: "Jokalante AI Model Tester",
     description:
-      "Transcription, translation, audio and answer generation for Wolof ↔ French",
+      "Transcription, translation and audio generation for Wolof ↔ French",
     asr: "Transcription (Audio → Wolof)",
     asr_desc:
       "Upload an audio file in Wolof and get the transcribed Wolof text.",

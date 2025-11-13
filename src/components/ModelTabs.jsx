@@ -23,7 +23,7 @@ export default function ModelTabs() {
         {/*<Tab label={t("correct")} />*/}
         <Tab label={t("wo_fr")} />
         <Tab label={t("fr_wo")} />
-        <Tab label={t("rag")} />
+        {/*<Tab label={t("rag")} />*/}
         <Tab label={t("tts")} />
       </Tabs>
 
@@ -62,15 +62,15 @@ export default function ModelTabs() {
             <TextPanel endpoint="/model/fr-wo" />
           </>
         )}
-        {tab === 3 && (
+        {/*tab === 3 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("rag_desc")}
             </Typography>
             <TextPanel endpoint="/model/rag" />
           </>
-        )}
-        {tab === 4 && (
+        )*/}
+        {tab === 3 && (
           <>
             <Typography variant="body2" color="text.secondary" gutterBottom>
               {t("tts")}
